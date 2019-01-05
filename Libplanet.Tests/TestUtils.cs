@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using Libplanet.Action;
+using Libplanet.Base;
 using Libplanet.Blocks;
 using Libplanet.Tx;
 using Xunit;
@@ -79,7 +80,7 @@ Actual:   new byte[{actual.LongLength}] {{ {actualRepr} }}";
             where T : IAction
         {
             var rewardBenificiary = new Address(
-                ByteUtil.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644")
+                ByteUtils.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644")
             );
             var timestamp = new DateTime(2018, 11, 29);
             return Block<T>.Mine(

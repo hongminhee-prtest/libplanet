@@ -9,6 +9,7 @@ using System.Runtime.Serialization;
 using System.Security.Cryptography;
 using System.Text;
 using Libplanet.Action;
+using Libplanet.Base;
 using Libplanet.Crypto;
 using Libplanet.Serialization;
 
@@ -147,14 +148,14 @@ namespace Libplanet.Tx
             if (!PublicKey.Verify(Bencode(false), Signature))
             {
                 throw new InvalidTxSignatureException(
-                    $"the signature ({ByteUtil.Hex(Signature)}) is failed to verify."
+                    $"the signature ({ByteUtils.Hex(Signature)}) is failed to verify."
                 );
             }
 
             if (!Address.FromPublicKey(PublicKey).Equals(Sender))
             {
                 throw new InvalidTxPublicKeyException(
-                    $"the public key ({ByteUtil.Hex(PublicKey.Format(true))} is not matched to the address ({Sender})."
+                    $"the public key ({ByteUtils.Hex(PublicKey.Format(true))} is not matched to the address ({Sender})."
                 );
             }
         }

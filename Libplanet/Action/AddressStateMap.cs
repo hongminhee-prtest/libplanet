@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Runtime.Serialization;
+using Libplanet.Base;
 
 namespace Libplanet.Action
 {
@@ -27,7 +28,7 @@ namespace Libplanet.Action
 
             foreach (SerializationEntry entry in info)
             {
-                dict[new Address(ByteUtil.ParseHex(entry.Name))] = entry.Value;
+                dict[new Address(ByteUtils.ParseHex(entry.Name))] = entry.Value;
             }
 
             _impl = dict.ToImmutableDictionary();

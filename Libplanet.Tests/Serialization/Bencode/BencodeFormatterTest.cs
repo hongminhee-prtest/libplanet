@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using Libplanet.Base;
 using Libplanet.Serialization;
 using Xunit;
 using static Libplanet.Tests.TestUtils;
@@ -53,7 +54,7 @@ namespace Libplanet.Tests.Serialization.Bencode
         [Fact]
         public void Deserialize()
         {
-            byte[] serialized = ByteUtil.ParseHex(
+            byte[] serialized = ByteUtils.ParseHex(
                 "64333a41676569333065343a4e616d65383a5377656e204d756e353a4e616d65736c383a5377656e204d756e393aebacb8ec84b1ec9b9031383ae383a0e383b3e382bde383b3e383afe383b36565");
             var formatter = new BencodexFormatter<Person>();
             using (var stream = new MemoryStream(serialized))

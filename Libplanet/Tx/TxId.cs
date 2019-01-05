@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using Libplanet.Base;
 
 namespace Libplanet.Tx
 {
@@ -42,7 +43,7 @@ namespace Libplanet.Tx
 
         public override string ToString()
         {
-            return ByteUtil.Hex(_bytes);
+            return ByteUtils.Hex(_bytes);
         }
 
         public bool Equals(TxId other)
@@ -62,7 +63,7 @@ namespace Libplanet.Tx
 
         public override int GetHashCode()
         {
-            return ByteUtil.CalculateHashCode(_bytes);
+            return ByteUtils.CalculateHashCode(_bytes);
         }
     }
 }

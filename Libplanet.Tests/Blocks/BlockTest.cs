@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Libplanet.Base;
 using Libplanet.Blocks;
 using Libplanet.Tests.Common.Action;
 using Libplanet.Tx;
@@ -23,7 +24,7 @@ namespace Libplanet.Tests.Blocks
             Assert.Null(_fx.Genesis.PreviousHash);
             Assert.Equal(new DateTime(2018, 11, 29), _fx.Genesis.Timestamp);
             Assert.Equal(
-                new Address(ByteUtil.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644")),
+                new Address(ByteUtils.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644")),
                 _fx.Genesis.RewardBeneficiary);
             Assert.Equal(new Nonce(new byte[] { 0x01, 0x00, 0x00, 0x00 }), _fx.Genesis.Nonce);
             AssertBytesEqual(
@@ -46,7 +47,7 @@ namespace Libplanet.Tests.Blocks
             Assert.Equal(_fx.Genesis.Hash, _fx.Next.PreviousHash);
             Assert.Equal(new DateTime(2018, 11, 30), _fx.Next.Timestamp);
             Assert.Equal(
-                new Address(ByteUtil.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644")),
+                new Address(ByteUtils.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644")),
                 _fx.Next.RewardBeneficiary);
         }
 
@@ -168,7 +169,7 @@ namespace Libplanet.Tests.Blocks
             Assert.Null(rawGenesis.PreviousHash);
             Assert.Equal("2018-11-29T00:00:00.000000Z", rawGenesis.Timestamp);
             Assert.Equal(
-                ByteUtil.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644"),
+                ByteUtils.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644"),
                 rawGenesis.RewardBeneficiary
             );
             Assert.Equal(
@@ -193,7 +194,7 @@ namespace Libplanet.Tests.Blocks
             Assert.Equal(rawGenesis.Hash, rawNext.PreviousHash);
             Assert.Equal("2018-11-30T00:00:00.000000Z", rawNext.Timestamp);
             Assert.Equal(
-                ByteUtil.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644"),
+                ByteUtils.ParseHex("21744f4f08db23e044178dafb8273aeb5ebe6644"),
                 rawNext.RewardBeneficiary
              );
         }

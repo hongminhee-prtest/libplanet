@@ -2,6 +2,7 @@ using System;
 using System.Collections.Immutable;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using Libplanet.Base;
 
 namespace Libplanet
 {
@@ -50,7 +51,7 @@ namespace Libplanet
         [Pure]
         public override string ToString()
         {
-            return ByteUtil.Hex(ToByteArray());
+            return ByteUtils.Hex(ToByteArray());
         }
     }
 }

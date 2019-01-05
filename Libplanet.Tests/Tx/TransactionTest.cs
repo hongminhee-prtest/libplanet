@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Libplanet.Base;
 using Libplanet.Crypto;
 using Libplanet.Tests.Common.Action;
 using Libplanet.Tx;
@@ -16,7 +17,7 @@ namespace Libplanet.Tests.Tx
         public void CanMake()
         {
             PrivateKey privateKey = new PrivateKey(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "cf36ecf9e47c879a0dbf46b2ecd83fd276182ade0265825e3b8c6ba214467b76")
             );
             var recipient = Address.FromPublicKey(privateKey.PublicKey);
@@ -67,7 +68,7 @@ namespace Libplanet.Tests.Tx
         public void CanSerialize()
         {
             PrivateKey privateKey = new PrivateKey(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "cf36ecf9e47c879a0dbf46b2ecd83fd276182ade0265825e3b8c6ba214467b76"
                 )
             );
@@ -119,7 +120,7 @@ namespace Libplanet.Tests.Tx
         public void CanSerializeWithActions()
         {
             PrivateKey privateKey = new PrivateKey(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "cf36ecf9e47c879a0dbf46b2ecd83fd276182ade0265825e3b8c6ba214467b76"
                 )
             );
@@ -188,11 +189,11 @@ namespace Libplanet.Tests.Tx
         [Fact]
         public void CanBeDeserialized()
         {
-            byte[] bytes = ByteUtil.ParseHex(
+            byte[] bytes = ByteUtils.ParseHex(
                 "64373a616374696f6e736c6531303a7075626c69635f6b657936353a0446115b0131baccf94a5856ede871295f6f3d352e6847cda9c03e89fe09f732808711ec97af6e341f110a326da1bdb81f5ae3badf76a90b22c8c491aed3aaa296393a726563697069656e7432303ac2a86014073d662a4a9bfcf9cb54263dfa4f5cbc363a73656e64657232303ac2a86014073d662a4a9bfcf9cb54263dfa4f5cbc393a7369676e617475726537313a3045022100d3009449764f77e5e3de701451f16e6555f0ab7d1fcb1533f1c8977a1af099100220254b158567b4b285d2a31bf3a922596ec8deeffc32e4f2d5e5982f4030478f4d393a74696d657374616d7032373a323031382d31312d32315430303a30303a30302e3030303030305a65"
             );
             PublicKey publicKey = new PrivateKey(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "cf36ecf9e47c879a0dbf46b2ecd83fd276182ade0265825e3b8c6ba214467b76"
                 )
             ).PublicKey;
@@ -203,7 +204,7 @@ namespace Libplanet.Tests.Tx
             Assert.Equal(Address.FromPublicKey(publicKey), tx.Sender);
             Assert.Equal(new DateTime(2018, 11, 21), tx.Timestamp);
             Assert.Equal(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "3045022100d3009449764f77e5e3de701451f16e6555f0ab7d1fcb1533f1c8977a1af099100220254b158567b4b285d2a31bf3a922596ec8deeffc32e4f2d5e5982f4030478f4d"
                 ),
                 tx.Signature
@@ -269,7 +270,7 @@ namespace Libplanet.Tests.Tx
                 0x30, 0x30, 0x30, 0x30, 0x30, 0x30, 0x5a, 0x65,
             };
             PublicKey publicKey = new PrivateKey(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "cf36ecf9e47c879a0dbf46b2ecd83fd276182ade0265825e3b8c6ba214467b76"
                 )
             ).PublicKey;
@@ -280,7 +281,7 @@ namespace Libplanet.Tests.Tx
             Assert.Equal(Address.FromPublicKey(publicKey), tx.Sender);
             Assert.Equal(new DateTime(2018, 11, 21), tx.Timestamp);
             Assert.Equal(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "304402203a3ff2e174c64e91fb98fd8ddd7b4fa85fef7ec43483ed4085b213fca9ae73e80220401cae21a65451280e7bb389074231fe4b78861ab47417fe9a5ae0dbb2c0a7d4"
                 ),
                 tx.Signature
@@ -322,7 +323,7 @@ namespace Libplanet.Tests.Tx
         public void CanValidate()
         {
             PrivateKey privateKey = new PrivateKey(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "cf36ecf9e47c879a0dbf46b2ecd83fd276182ade0265825e3b8c6ba214467b76"
                 )
             );
@@ -342,7 +343,7 @@ namespace Libplanet.Tests.Tx
         public void CanDetectBadSignature()
         {
             Transaction<BaseAction> tx = Transaction<BaseAction>.FromBencoded(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "64373a616374696f6e736c6531303a7075626c69635f6b657936353a0446115b0131baccf94a5856ede871295f6f3d352e6847cda9c03e89fe09f732808711ec97af6e341f110a326da1bdb81f5ae3badf76a90b22c8c491aed3aaa296393a726563697069656e7432303ac2a86014073d662a4a9bfcf9cb54263dfa4f5cbc363a73656e64657232303ac2a86014073d662a4a9bfcf9cb54263dfa4f5cbc393a7369676e617475726537313a3045022100d3009449764f77e5e3de701451f16e6555f0ab7d1fcb1533f1c8977b1af099100220254b158567b4b285d2a31bf3a922596ec8deeffc32e4f2d5e5982f4030478f4d393a74696d657374616d7032373a323031382d31312d32315430303a30303a30302e3030303030305a65"
                 )
             );
@@ -437,7 +438,7 @@ namespace Libplanet.Tests.Tx
         public void CanConvertToRaw()
         {
             PrivateKey privateKey = new PrivateKey(
-                ByteUtil.ParseHex(
+                ByteUtils.ParseHex(
                     "cf36ecf9e47c879a0dbf46b2ecd83fd276182ade0265825e3b8c6ba214467b76"
                 )
             );

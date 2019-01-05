@@ -9,6 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using Libplanet.Action;
+using Libplanet.Base;
 using Libplanet.Blocks;
 using Libplanet.Serialization;
 using Libplanet.Tx;
@@ -293,7 +294,7 @@ namespace Libplanet.Store
                         continue;
                     }
 
-                    yield return new Address(ByteUtil.ParseHex(prefix.Name + rest.Name));
+                    yield return new Address(ByteUtils.ParseHex(prefix.Name + rest.Name));
                 }
             }
         }
@@ -317,7 +318,7 @@ namespace Libplanet.Store
                         continue;
                     }
 
-                    yield return new HashDigest<SHA256>(ByteUtil.ParseHex(prefix.Name + rest.Name));
+                    yield return new HashDigest<SHA256>(ByteUtils.ParseHex(prefix.Name + rest.Name));
                 }
             }
         }
@@ -353,7 +354,7 @@ namespace Libplanet.Store
             {
                 foreach (var staged in new DirectoryInfo(_stagedTransactionsPath).EnumerateFiles())
                 {
-                    yield return new TxId(ByteUtil.ParseHex(staged.Name));
+                    yield return new TxId(ByteUtils.ParseHex(staged.Name));
                 }
             }
         }
@@ -378,7 +379,7 @@ namespace Libplanet.Store
                         continue;
                     }
 
-                    yield return new TxId(ByteUtil.ParseHex(prefix.Name + rest.Name));
+                    yield return new TxId(ByteUtils.ParseHex(prefix.Name + rest.Name));
                 }
             }
         }

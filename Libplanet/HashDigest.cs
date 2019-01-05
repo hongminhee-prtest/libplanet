@@ -3,6 +3,7 @@ using System.Collections.Immutable;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Security.Cryptography;
+using Libplanet.Base;
 
 namespace Libplanet
 {
@@ -65,7 +66,7 @@ namespace Libplanet
         [Pure]
         public static HashDigest<T> FromString(string s)
         {
-            return new HashDigest<T>(ByteUtil.ParseHex(s));
+            return new HashDigest<T>(ByteUtils.ParseHex(s));
         }
 
         [Pure]
@@ -102,7 +103,7 @@ namespace Libplanet
         [Pure]
         public override string ToString()
         {
-            return ByteUtil.Hex(ToByteArray());
+            return ByteUtils.Hex(ToByteArray());
         }
     }
 

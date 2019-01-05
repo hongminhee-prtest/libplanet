@@ -2,6 +2,7 @@ using System;
 using System.Collections.Immutable;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using Libplanet.Base;
 using Libplanet.Crypto;
 using Org.BouncyCastle.Crypto.Digests;
 
@@ -74,7 +75,7 @@ namespace Libplanet
 
         public string Hex()
         {
-            return ByteUtil.Hex(ToByteArray());
+            return ByteUtils.Hex(ToByteArray());
         }
     }
 }

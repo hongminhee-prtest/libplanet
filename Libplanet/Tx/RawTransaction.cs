@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
+using Libplanet.Base;
 using Libplanet.Serialization;
 
 namespace Libplanet.Tx
@@ -108,7 +109,7 @@ namespace Libplanet.Tx
 
         public override int GetHashCode()
         {
-            return ByteUtil.CalculateHashCode(Signature);
+            return ByteUtils.CalculateHashCode(Signature);
         }
     }
 }
