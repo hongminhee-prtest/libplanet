@@ -1,4 +1,4 @@
-using Libplanet.Crypto;
+using Libplanet.Base.Crypto;
 
 namespace Libplanet
 {

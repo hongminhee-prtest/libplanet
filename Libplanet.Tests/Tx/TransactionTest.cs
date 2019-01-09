@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Libplanet.Base;
-using Libplanet.Crypto;
+using Libplanet.Base.Crypto;
 using Libplanet.Tests.Common.Action;
 using Libplanet.Tx;
 using Xunit;

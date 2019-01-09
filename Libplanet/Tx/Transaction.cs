@@ -7,10 +7,9 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Security.Cryptography;
-using System.Text;
 using Libplanet.Action;
 using Libplanet.Base;
-using Libplanet.Crypto;
+using Libplanet.Base.Crypto;
 using Libplanet.Serialization;
 
 namespace Libplanet.Tx

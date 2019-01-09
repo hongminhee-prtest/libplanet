@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Libplanet.Action;
+using Libplanet.Base.Crypto;
 using Libplanet.Blocks;
-using Libplanet.Crypto;
-using Libplanet.Tests.Common;
 using Libplanet.Tests.Common.Action;
 using Libplanet.Tests.Store;
 using Libplanet.Tx;
@@ -98,7 +97,7 @@ namespace Libplanet.Tests
                 },
             };
             Transaction<BaseAction> tx = Transaction<BaseAction>.Make(
-                PrivateKey.Generate(),
+                new PrivateKey(),
                 _fx.Address1,
                 actions,
                 DateTime.UtcNow

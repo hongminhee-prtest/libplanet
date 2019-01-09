@@ -3,7 +3,7 @@ using System.Collections.Immutable;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using Libplanet.Base;
-using Libplanet.Crypto;
+using Libplanet.Base.Crypto;
 using Org.BouncyCastle.Crypto.Digests;
 
 namespace Libplanet

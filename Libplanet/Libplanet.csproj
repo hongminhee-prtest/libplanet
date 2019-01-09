@@ -48,4 +48,10 @@
   <ItemGroup>
     <AdditionalFiles Include="..\stylecop.json" />
   </ItemGroup>
+
+  <ItemGroup>
+    <SourceGeneratorInput Remove="Crypto\Aesgcm.cs" />
+    <SourceGeneratorInput Remove="Crypto\PrivateKey.cs" />
+    <SourceGeneratorInput Remove="Crypto\PublicKey.cs" />
+  </ItemGroup>
 </Project>

@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
+using Libplanet.Base.Crypto;
 using Libplanet.Blocks;
-using Libplanet.Crypto;
 using Libplanet.Store;
 using Libplanet.Tests.Common.Action;
 using Libplanet.Tx;
@@ -119,7 +119,7 @@ namespace Libplanet.Tests.Store
 
         private Transaction<BaseAction> MakeTransaction()
         {
-            PrivateKey privateKey = PrivateKey.Generate();
+            PrivateKey privateKey = new PrivateKey();
             Address recipient = privateKey.PublicKey.ToAddress();
             var timestamp = new DateTime(2018, 11, 21);
             return Transaction<BaseAction>.Make(

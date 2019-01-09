@@ -1,6 +1,6 @@
 using System.Text;
 using Libplanet.Base;
-using Libplanet.Crypto;
+using Libplanet.Base.Crypto;
 using Xunit;
 
 namespace Libplanet.Tests.Crypto
@@ -22,7 +22,7 @@ namespace Libplanet.Tests.Crypto
         [Fact]
         public void EncryptTest()
         {
-            var prvKey = PrivateKey.Generate();
+            var prvKey = new PrivateKey();
             var pubKey = prvKey.PublicKey;
             var bs = Encoding.ASCII.GetBytes("hello world");
             var encrypted = pubKey.Encrypt(bs);
