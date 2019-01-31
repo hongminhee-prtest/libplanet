@@ -77,14 +77,14 @@
 <a class="xref" href="Libplanet.Hashcash.Stamp.html">Hashcash.Stamp</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Libplanet.Nonce.html">Nonce</a>&gt;</div>
+    <div><span class="xref">Uno.Equality.IKeyEquatable</span>&lt;<a class="xref" href="Libplanet.Nonce.html">Nonce</a>&gt;</div>
+    <div><span class="xref">Uno.Equality.IKeyEquatable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a>
-    </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
     </div>
@@ -100,7 +100,7 @@
   <h5 id="Libplanet_Nonce_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[GeneratedEquality]
-public struct Nonce</code></pre>
+public struct Nonce : IEquatable&lt;Nonce&gt;, IKeyEquatable&lt;Nonce&gt;, IKeyEquatable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -209,6 +209,314 @@ public ImmutableArray&lt;byte&gt; ByteArray { get; }</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_Equals_Libplanet_Nonce_.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.Equals(Libplanet.Nonce)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L25">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_Equals_" data-uid="Libplanet.Nonce.Equals*"></a>
+  <h4 id="Libplanet_Nonce_Equals_Libplanet_Nonce_" data-uid="Libplanet.Nonce.Equals(Libplanet.Nonce)">Equals(Nonce)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Nonce other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_Equals_Libplanet_Nonce_Libplanet_Nonce_.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.Equals(Libplanet.Nonce%2CLibplanet.Nonce)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L19">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_Equals_" data-uid="Libplanet.Nonce.Equals*"></a>
+  <h4 id="Libplanet_Nonce_Equals_Libplanet_Nonce_Libplanet_Nonce_" data-uid="Libplanet.Nonce.Equals(Libplanet.Nonce,Libplanet.Nonce)">Equals(Nonce, Nonce)</h4>
+  <div class="markdown level1 summary"><p>Checks two instances of Nonce for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Equals(Nonce a, Nonce b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Libplanet_Nonce_Equals_Libplanet_Nonce_Libplanet_Nonce__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can also simply use the overriden '==' and '!=' operators.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L31">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_Equals_" data-uid="Libplanet.Nonce.Equals*"></a>
+  <h4 id="Libplanet_Nonce_Equals_System_Object_" data-uid="Libplanet.Nonce.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_GetHashCode.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L66">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_GetHashCode_" data-uid="Libplanet.Nonce.GetHashCode*"></a>
+  <h4 id="Libplanet_Nonce_GetHashCode" data-uid="Libplanet.Nonce.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_GetKeyHashCode.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.GetKeyHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L117">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_GetKeyHashCode_" data-uid="Libplanet.Nonce.GetKeyHashCode*"></a>
+  <h4 id="Libplanet_Nonce_GetKeyHashCode" data-uid="Libplanet.Nonce.GetKeyHashCode">GetKeyHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetKeyHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_KeyEquals_Libplanet_Nonce_.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.KeyEquals(Libplanet.Nonce)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L97">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_KeyEquals_" data-uid="Libplanet.Nonce.KeyEquals*"></a>
+  <h4 id="Libplanet_Nonce_KeyEquals_Libplanet_Nonce_" data-uid="Libplanet.Nonce.KeyEquals(Libplanet.Nonce)">KeyEquals(Nonce)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyEquals(Nonce other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_KeyEquals_System_Object_.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.KeyEquals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L92">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_KeyEquals_" data-uid="Libplanet.Nonce.KeyEquals*"></a>
+  <h4 id="Libplanet_Nonce_KeyEquals_System_Object_" data-uid="Libplanet.Nonce.KeyEquals(System.Object)">KeyEquals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyEquals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_ToByteArray.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.ToByteArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -282,6 +590,122 @@ public override string ToString()</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_op_Equality_Libplanet_Nonce_Libplanet_Nonce_.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.op_Equality(Libplanet.Nonce%2CLibplanet.Nonce)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L53">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_op_Equality_" data-uid="Libplanet.Nonce.op_Equality*"></a>
+  <h4 id="Libplanet_Nonce_op_Equality_Libplanet_Nonce_Libplanet_Nonce_" data-uid="Libplanet.Nonce.op_Equality(Libplanet.Nonce,Libplanet.Nonce)">Equality(Nonce, Nonce)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Nonce a, Nonce b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce_op_Inequality_Libplanet_Nonce_Libplanet_Nonce_.md&amp;value=---%0Auid%3A%20Libplanet.Nonce.op_Inequality(Libplanet.Nonce%2CLibplanet.Nonce)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L59">View Source</a>
+  </span>
+  <a id="Libplanet_Nonce_op_Inequality_" data-uid="Libplanet.Nonce.op_Inequality*"></a>
+  <h4 id="Libplanet_Nonce_op_Inequality_Libplanet_Nonce_Libplanet_Nonce_" data-uid="Libplanet.Nonce.op_Inequality(Libplanet.Nonce,Libplanet.Nonce)">Inequality(Nonce, Nonce)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Nonce a, Nonce b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Nonce.html">Nonce</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">Uno.Equality.IKeyEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Uno.Equality.IKeyEquatable</span>
+  </div>
 </article>
           </div>
           
@@ -293,7 +717,7 @@ public override string ToString()</code></pre>
                     <a href="https://github.com/dahlia/libplanet.net/new/3485ec1164f0d8d296555479fc5358d884bee536/apiSpec/new?filename=Libplanet_Nonce.md&amp;value=---%0Auid%3A%20Libplanet.Nonce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/Nonce.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dahlia/libplanet.net/blob/3485ec1164f0d8d296555479fc5358d884bee536/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Nonce_17837EF5.g.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
