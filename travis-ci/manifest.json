@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/Users/travis/build/dahlia/libplanet.net/Docs",
+  "source_base_path": "/home/travis/build/dahlia/libplanet.net/Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -747,11 +747,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
