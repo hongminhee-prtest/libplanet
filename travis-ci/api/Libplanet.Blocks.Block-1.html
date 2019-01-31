@@ -83,17 +83,14 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;&gt;</div>
+    <div><span class="xref">Uno.Equality.IKeyEquatable</span>&lt;<a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;&gt;</div>
+    <div><span class="xref">Uno.Equality.IKeyEquatable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
@@ -110,7 +107,7 @@
   <h5 id="Libplanet_Blocks_Block_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[GeneratedEquality]
-public class Block&lt;T&gt; : ISerializable where T : IAction</code></pre>
+public class Block&lt;T&gt; : ISerializable, IEquatable&lt;Block&lt;T&gt;&gt;, IKeyEquatable&lt;Block&lt;T&gt;&gt;, IKeyEquatable where T : IAction</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -534,6 +531,158 @@ public IEnumerable&lt;Transaction&lt;T&gt;&gt; Transactions { get; }</code></pre
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_Equals_Libplanet_Blocks_Block__0__.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.Equals(Libplanet.Blocks.Block%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L30">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_Equals_" data-uid="Libplanet.Blocks.Block`1.Equals*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_Equals_Libplanet_Blocks_Block__0__" data-uid="Libplanet.Blocks.Block`1.Equals(Libplanet.Blocks.Block{`0})">Equals(Block&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Block&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_Equals_Libplanet_Blocks_Block__0__Libplanet_Blocks_Block__0__.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.Equals(Libplanet.Blocks.Block%7B%600%7D%2CLibplanet.Blocks.Block%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L19">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_Equals_" data-uid="Libplanet.Blocks.Block`1.Equals*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_Equals_Libplanet_Blocks_Block__0__Libplanet_Blocks_Block__0__" data-uid="Libplanet.Blocks.Block`1.Equals(Libplanet.Blocks.Block{`0},Libplanet.Blocks.Block{`0})">Equals(Block&lt;T&gt;, Block&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks two instances of Block&lt;T&gt; for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Equals(Block&lt;T&gt; a, Block&lt;T&gt; b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Libplanet_Blocks_Block_1_Equals_Libplanet_Blocks_Block__0__Libplanet_Blocks_Block__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can also simply use the overriden '==' and '!=' operators.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L38">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_Equals_" data-uid="Libplanet.Blocks.Block`1.Equals*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_Equals_System_Object_" data-uid="Libplanet.Blocks.Block`1.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_FromBencoded_System_Byte___.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.FromBencoded(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -581,6 +730,68 @@ public IEnumerable&lt;Transaction&lt;T&gt;&gt; Transactions { get; }</code></pre
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_GetHashCode.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L74">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_GetHashCode_" data-uid="Libplanet.Blocks.Block`1.GetHashCode*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_GetHashCode" data-uid="Libplanet.Blocks.Block`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_GetKeyHashCode.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.GetKeyHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L128">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_GetKeyHashCode_" data-uid="Libplanet.Blocks.Block`1.GetKeyHashCode*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_GetKeyHashCode" data-uid="Libplanet.Blocks.Block`1.GetKeyHashCode">GetKeyHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetKeyHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -612,6 +823,100 @@ public IEnumerable&lt;Transaction&lt;T&gt;&gt; Transactions { get; }</code></pre
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
         <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_KeyEquals_Libplanet_Blocks_Block__0__.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.KeyEquals(Libplanet.Blocks.Block%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L105">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_KeyEquals_" data-uid="Libplanet.Blocks.Block`1.KeyEquals*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_KeyEquals_Libplanet_Blocks_Block__0__" data-uid="Libplanet.Blocks.Block`1.KeyEquals(Libplanet.Blocks.Block{`0})">KeyEquals(Block&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyEquals(Block&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_KeyEquals_System_Object_.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.KeyEquals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L100">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_KeyEquals_" data-uid="Libplanet.Blocks.Block`1.KeyEquals*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_KeyEquals_System_Object_" data-uid="Libplanet.Blocks.Block`1.KeyEquals(System.Object)">KeyEquals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyEquals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -735,9 +1040,124 @@ public IEnumerable&lt;Transaction&lt;T&gt;&gt; Transactions { get; }</code></pre
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Validate()</code></pre>
   </div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_op_Equality_Libplanet_Blocks_Block__0__Libplanet_Blocks_Block__0__.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.op_Equality(Libplanet.Blocks.Block%7B%600%7D%2CLibplanet.Blocks.Block%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L61">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_op_Equality_" data-uid="Libplanet.Blocks.Block`1.op_Equality*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_op_Equality_Libplanet_Blocks_Block__0__Libplanet_Blocks_Block__0__" data-uid="Libplanet.Blocks.Block`1.op_Equality(Libplanet.Blocks.Block{`0},Libplanet.Blocks.Block{`0})">Equality(Block&lt;T&gt;, Block&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Block&lt;T&gt; a, Block&lt;T&gt; b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1_op_Inequality_Libplanet_Blocks_Block__0__Libplanet_Blocks_Block__0__.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601.op_Inequality(Libplanet.Blocks.Block%7B%600%7D%2CLibplanet.Blocks.Block%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L67">View Source</a>
+  </span>
+  <a id="Libplanet_Blocks_Block_1_op_Inequality_" data-uid="Libplanet.Blocks.Block`1.op_Inequality*"></a>
+  <h4 id="Libplanet_Blocks_Block_1_op_Inequality_Libplanet_Blocks_Block__0__Libplanet_Blocks_Block__0__" data-uid="Libplanet.Blocks.Block`1.op_Inequality(Libplanet.Blocks.Block{`0},Libplanet.Blocks.Block{`0})">Inequality(Block&lt;T&gt;, Block&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Block&lt;T&gt; a, Block&lt;T&gt; b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Blocks.Block-1.html">Block</a>&lt;T&gt;</td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">Uno.Equality.IKeyEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Uno.Equality.IKeyEquatable</span>
   </div>
 </article>
           </div>
@@ -750,7 +1170,7 @@ public IEnumerable&lt;Transaction&lt;T&gt;&gt; Transactions { get; }</code></pre
                     <a href="https://github.com/dahlia/libplanet.net/new/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/apiSpec/new?filename=Libplanet_Blocks_Block_1.md&amp;value=---%0Auid%3A%20Libplanet.Blocks.Block%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/Blocks/Block.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dahlia/libplanet.net/blob/72452e16c5b5d6f532f0cc61bd52dc2ccea62f1f/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/Block_T_33962035.g.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
