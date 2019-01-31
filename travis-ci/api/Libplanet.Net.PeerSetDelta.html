@@ -83,17 +83,14 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a>&gt;</div>
+    <div><span class="xref">Uno.Equality.IKeyEquatable</span>&lt;<a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a>&gt;</div>
+    <div><span class="xref">Uno.Equality.IKeyEquatable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
@@ -111,7 +108,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
 [GeneratedEquality]
-public class PeerSetDelta : ISerializable</code></pre>
+public class PeerSetDelta : ISerializable, IEquatable&lt;PeerSetDelta&gt;, IKeyEquatable&lt;PeerSetDelta&gt;, IKeyEquatable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -367,6 +364,220 @@ public DateTime Timestamp { get; }</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_Equals_Libplanet_Net_PeerSetDelta_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.Equals(Libplanet.Net.PeerSetDelta)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L30">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_Equals_" data-uid="Libplanet.Net.PeerSetDelta.Equals*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_Equals_Libplanet_Net_PeerSetDelta_" data-uid="Libplanet.Net.PeerSetDelta.Equals(Libplanet.Net.PeerSetDelta)">Equals(PeerSetDelta)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(PeerSetDelta other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_Equals_Libplanet_Net_PeerSetDelta_Libplanet_Net_PeerSetDelta_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.Equals(Libplanet.Net.PeerSetDelta%2CLibplanet.Net.PeerSetDelta)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L19">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_Equals_" data-uid="Libplanet.Net.PeerSetDelta.Equals*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_Equals_Libplanet_Net_PeerSetDelta_Libplanet_Net_PeerSetDelta_" data-uid="Libplanet.Net.PeerSetDelta.Equals(Libplanet.Net.PeerSetDelta,Libplanet.Net.PeerSetDelta)">Equals(PeerSetDelta, PeerSetDelta)</h4>
+  <div class="markdown level1 summary"><p>Checks two instances of PeerSetDelta for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Equals(PeerSetDelta a, PeerSetDelta b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Libplanet_Net_PeerSetDelta_Equals_Libplanet_Net_PeerSetDelta_Libplanet_Net_PeerSetDelta__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can also simply use the overriden '==' and '!=' operators.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L38">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_Equals_" data-uid="Libplanet.Net.PeerSetDelta.Equals*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_Equals_System_Object_" data-uid="Libplanet.Net.PeerSetDelta.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_GetHashCode.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L97">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_GetHashCode_" data-uid="Libplanet.Net.PeerSetDelta.GetHashCode*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_GetHashCode" data-uid="Libplanet.Net.PeerSetDelta.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_GetKeyHashCode.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.GetKeyHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L199">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_GetKeyHashCode_" data-uid="Libplanet.Net.PeerSetDelta.GetKeyHashCode*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_GetKeyHashCode" data-uid="Libplanet.Net.PeerSetDelta.GetKeyHashCode">GetKeyHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetKeyHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -404,6 +615,100 @@ public DateTime Timestamp { get; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_KeyEquals_Libplanet_Net_PeerSetDelta_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.KeyEquals(Libplanet.Net.PeerSetDelta)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L168">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_KeyEquals_" data-uid="Libplanet.Net.PeerSetDelta.KeyEquals*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_KeyEquals_Libplanet_Net_PeerSetDelta_" data-uid="Libplanet.Net.PeerSetDelta.KeyEquals(Libplanet.Net.PeerSetDelta)">KeyEquals(PeerSetDelta)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyEquals(PeerSetDelta other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_KeyEquals_System_Object_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.KeyEquals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L163">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_KeyEquals_" data-uid="Libplanet.Net.PeerSetDelta.KeyEquals*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_KeyEquals_System_Object_" data-uid="Libplanet.Net.PeerSetDelta.KeyEquals(System.Object)">KeyEquals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyEquals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_ToString.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -434,9 +739,124 @@ public DateTime Timestamp { get; }</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_op_Equality_Libplanet_Net_PeerSetDelta_Libplanet_Net_PeerSetDelta_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.op_Equality(Libplanet.Net.PeerSetDelta%2CLibplanet.Net.PeerSetDelta)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L84">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_op_Equality_" data-uid="Libplanet.Net.PeerSetDelta.op_Equality*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_op_Equality_Libplanet_Net_PeerSetDelta_Libplanet_Net_PeerSetDelta_" data-uid="Libplanet.Net.PeerSetDelta.op_Equality(Libplanet.Net.PeerSetDelta,Libplanet.Net.PeerSetDelta)">Equality(PeerSetDelta, PeerSetDelta)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PeerSetDelta a, PeerSetDelta b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta_op_Inequality_Libplanet_Net_PeerSetDelta_Libplanet_Net_PeerSetDelta_.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta.op_Inequality(Libplanet.Net.PeerSetDelta%2CLibplanet.Net.PeerSetDelta)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L90">View Source</a>
+  </span>
+  <a id="Libplanet_Net_PeerSetDelta_op_Inequality_" data-uid="Libplanet.Net.PeerSetDelta.op_Inequality*"></a>
+  <h4 id="Libplanet_Net_PeerSetDelta_op_Inequality_Libplanet_Net_PeerSetDelta_Libplanet_Net_PeerSetDelta_" data-uid="Libplanet.Net.PeerSetDelta.op_Inequality(Libplanet.Net.PeerSetDelta,Libplanet.Net.PeerSetDelta)">Inequality(PeerSetDelta, PeerSetDelta)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PeerSetDelta a, PeerSetDelta b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Libplanet.Net.PeerSetDelta.html">PeerSetDelta</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">Uno.Equality.IKeyEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Uno.Equality.IKeyEquatable</span>
   </div>
 </article>
           </div>
@@ -449,7 +869,7 @@ public DateTime Timestamp { get; }</code></pre>
                     <a href="https://github.com/dahlia/libplanet.net/new/758c94c3d0a2c587748d699f29facbd1f2c70cd4/apiSpec/new?filename=Libplanet_Net_PeerSetDelta.md&amp;value=---%0Auid%3A%20Libplanet.Net.PeerSetDelta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/Net/PeerSetDelta.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dahlia/libplanet.net/blob/758c94c3d0a2c587748d699f29facbd1f2c70cd4/Libplanet/obj/Release/netstandard2.0/g/EqualityGenerator/PeerSetDelta_A399190A.g.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
